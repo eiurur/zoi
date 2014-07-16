@@ -1,6 +1,6 @@
 # zoi
 
-![zoi](http://linka.jp/wp-content/uploads/2014/07/ganbaruzoi.png "zoi")
+![zoi](https://dl.dropboxusercontent.com/u/31717228/images/zoi/ganbaruzoi.png "zoi")
 
 ### <a href="http://zoi.herokuapp.com" target="_blank">zoi - heroku</a>
 
