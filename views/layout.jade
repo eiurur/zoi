@@ -1,0 +1,28 @@
+!!!
+html(ng-app="myApp")
+  head
+    meta(charset='utf8')
+    meta(property='og:url', content='http://zoi.herokuapp.com')
+    meta(property='og:site_name', content='zoi')
+    meta(property='og:description', content='今日も１日頑張るぞい')
+    meta(property='og:author', content='eiurur')
+    meta(property='og:locale', content='ja_JP')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    base(href='/')
+    title zoi
+    link(rel='shortcut icon', href='images/favicon.ico')
+    link(rel='stylesheet', href='/bower_components/Bootflat/bootflat/css/bootflat.min.css')
+    link(rel='stylesheet', href='/bower_components/Bootflat/css/site.min.css')
+    link(rel='stylesheet', href="//maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css")
+    link(rel='stylesheet', href='/css/app.css')
+  body.bg
+    block body
+
+  script(src='js/lib/angular/angular.min.js')
+  script(src='js/app.js')
+  script(src='js/services.js')
+  script(src='js/controllers.js')
+  script(src='js/filters.js')
+  script(src='js/directives.js')
+  script(src='/js/analyticstracking.js')

@@ -1,0 +1,52 @@
+/* app css stylesheet */
+
+.bg {
+  /*background-image: url(../images/e0e0e0.png);*/
+  background-color: #F1F2F6;
+}
+.menu {
+  list-style: none;
+  border-bottom: 0.1em solid black;
+  margin-bottom: 2em;
+  padding: 0 0 0.5em;
+}
+
+.menu:before {
+  content: "[";
+}
+
+.menu:after {
+  content: "]";
+}
+
+.menu > li {
+  display: inline;
+}
+
+.menu > li:before {
+  content: "|";
+  padding-right: 0.3em;
+}
+
+.menu > li:nth-child(1):before {
+  content: "";
+  padding: 0;
+}
+
+.panel-magin {
+  margin-top: 30px;
+}
+/*.title {
+  color: #9B59B6;
+}*/
+.tweet {
+  font-size: 28px;
+}
+
+.word {
+  padding: 0 25px;
+}
+
+.affiliate {
+   padding: 30px 0;
+}
