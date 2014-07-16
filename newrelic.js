@@ -8,11 +8,11 @@ exports.config = {
   /**
    * Array of application names.
    */
-  app_name : ['ayase'],
+  app_name : ['zoi'],
   /**
    * Your New Relic license key.
    */
-  license_key : '7e3192191515a4e8a2a036d175907fb707824cee',
+  license_key : 'fbfbbb16e6ca6cca7db8ce3b70ec36340ca89211',
   logging : {
     /**
      * Level at which to log. 'trace' is most useful to New Relic when diagnosing
