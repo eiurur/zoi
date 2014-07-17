@@ -14,10 +14,6 @@ config(function ($routeProvider, $locationProvider) {
       templateUrl: 'partials/index',
       controller: 'MyCtrl1'
     }).
-    when('/view2', {
-      templateUrl: 'partials/partial2',
-      controller: 'MyCtrl2'
-    }).
     otherwise({
       redirectTo: '/'
     });
