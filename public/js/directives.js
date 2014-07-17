@@ -23,6 +23,10 @@ var items = [
     image: 'https://dl.dropboxusercontent.com/u/31717228/images/zoi/soutai.jpg',
     src: 'pic.twitter.com/7s5Ke5IQVs'
   }, {
+    word: 'がんばる',
+    image: 'https://dl.dropboxusercontent.com/u/31717228/images/zoi/ganbbarimasyu.jpg',
+    src: 'pic.twitter.com/mrkPJC3DYc'
+  }, {
     word: 'あきらめる',
     image: 'https://dl.dropboxusercontent.com/u/31717228/images/zoi/dameda.jpg',
     src: 'pic.twitter.com/DE1dKyLsav'
@@ -35,13 +39,41 @@ var items = [
     image: 'https://dl.dropboxusercontent.com/u/31717228/images/zoi/osakini.jpg',
     src: 'pic.twitter.com/ajwCeJa54A'
   }, {
+    word: 'かえる',
+    image: 'https://dl.dropboxusercontent.com/u/31717228/images/zoi/otukare.jpg',
+    src: 'pic.twitter.com/ltC7iuI7rd'
+  }, {
     word: 'ごはんにする',
     image: 'https://dl.dropboxusercontent.com/u/31717228/images/zoi/gulu.jpg',
     src: 'pic.twitter.com/rWLIjU08mU'
   }, {
+    word: 'ごはんにする',
+    image: 'https://dl.dropboxusercontent.com/u/31717228/images/zoi/onakasuita.jpg',
+    src: 'pic.twitter.com/g0tGY4FtE4'
+  }, {
     word: 'ねる',
     image: 'https://dl.dropboxusercontent.com/u/31717228/images/zoi/yasumutoki.jpg',
     src: 'pic.twitter.com/Qa4OOuaSb4'
+  }, {
+    word: 'わかった',
+    image: 'https://dl.dropboxusercontent.com/u/31717228/images/zoi/wakatta.jpg',
+    src: 'pic.twitter.com/TzK4f6K8Cf'
+  }, {
+    word: 'いけるきがする',
+    image: 'https://dl.dropboxusercontent.com/u/31717228/images/zoi/ikeru.jpg',
+    src: 'pic.twitter.com/npWAwmcME6'
+  }, {
+    word: 'あせる',
+    image: 'https://dl.dropboxusercontent.com/u/31717228/images/zoi/owattenai.png',
+    src: 'pic.twitter.com/yh1ObvxjVI'
+  }, {
+    word: 'しんちょくだめです',
+    image: 'https://dl.dropboxusercontent.com/u/31717228/images/zoi/gogogo.jpg',
+    src: 'pic.twitter.com/s9R0mikezN'
+  }, {
+    word: 'きゅうけいにする',
+    image: 'https://dl.dropboxusercontent.com/u/31717228/images/zoi/coffee.jpg',
+    src: 'pic.twitter.com/onsbKNL4H7'
   }
 ];
 angular.module('myApp.directives', [])
