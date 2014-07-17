@@ -1,5 +1,9 @@
 /* app css stylesheet */
 
+
+a {
+  cursor: pointer;
+}
 .bg {
   /*background-image: url(../images/e0e0e0.png);*/
   background-color: #F1F2F6;

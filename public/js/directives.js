@@ -1,7 +1,49 @@
 'use strict';
 
 /* Directives */
-
+var items = [
+  {
+    word: 'がんばる',
+    image: 'https://dl.dropboxusercontent.com/u/31717228/images/zoi/huhuh.jpg',
+    src: 'pic.twitter.com/7hvwgRmZ2r'
+  }, {
+    word: 'がんばる',
+    image: 'https://dl.dropboxusercontent.com/u/31717228/images/zoi/ganbaruzoi.jpg',
+    src: 'pic.twitter.com/6bdYFIyc3e'
+  }, {
+    word: 'がんばる',
+    image: 'https://dl.dropboxusercontent.com/u/31717228/images/zoi/yosi.jpg',
+    src: 'pic.twitter.com/VMJbHYLznB'
+  }, {
+    word: 'がんばる',
+    image: 'https://dl.dropboxusercontent.com/u/31717228/images/zoi/owarisouninai.jpg',
+    src: 'pic.twitter.com/Y3ht2Ud94J'
+  }, {
+    word: 'がんばる',
+    image: 'https://dl.dropboxusercontent.com/u/31717228/images/zoi/soutai.jpg',
+    src: 'pic.twitter.com/7s5Ke5IQVs'
+  }, {
+    word: 'あきらめる',
+    image: 'https://dl.dropboxusercontent.com/u/31717228/images/zoi/dameda.jpg',
+    src: 'pic.twitter.com/DE1dKyLsav'
+  }, {
+    word: 'あきらめる',
+    image: 'https://dl.dropboxusercontent.com/u/31717228/images/zoi/mouyada.jpg',
+    src: 'pic.twitter.com/lkDaoEEC7H'
+  }, {
+    word: 'かえる',
+    image: 'https://dl.dropboxusercontent.com/u/31717228/images/zoi/osakini.jpg',
+    src: 'pic.twitter.com/ajwCeJa54A'
+  }, {
+    word: 'ごはんにする',
+    image: 'https://dl.dropboxusercontent.com/u/31717228/images/zoi/gulu.jpg',
+    src: 'pic.twitter.com/rWLIjU08mU'
+  }, {
+    word: 'ねる',
+    image: 'https://dl.dropboxusercontent.com/u/31717228/images/zoi/yasumutoki.jpg',
+    src: 'pic.twitter.com/Qa4OOuaSb4'
+  }
+];
 angular.module('myApp.directives', [])
   .directive('imgPreload', ['$rootScope', function($rootScope) {
     return {
@@ -18,54 +60,35 @@ angular.module('myApp.directives', [])
       }
     };
   }])
+  .directive('newNewGame', function() {
+    return {
+      restrict: 'A',
+      link: function(scope, element, attrs) {
+        var targetPhoto, targetContent, item;
+
+        attrs.suffle = false;
+
+        element.bind('click', function() {
+          if (!targetPhoto) targetPhoto = document.querySelector('.jumbotron-photo > img');
+          if (!targetContent) targetContent = document.querySelector('.jumbotron-contents');
+
+          console.log(targetPhoto);
+          console.log(targetContent);
+
+          if(!attrs.suffle) {
+            item = items[Math.floor(Math.random() * items.length)];
+            targetPhoto.src = item.image;
+            targetContent.innerHTML = '<h1 class="text-center">' + item.word + '<i class="fa fa-chevron-right  word"></i><a href="https://twitter.com/intent/tweet?hashtags=NEWGAME!&url=http://zoi.herokuapp.com&text=' + item.src + '" title="Tweet" target="_blank"><i class="fa fa-twitter"></i> <span class="tweet">tweet</span></a></h1>';
+            // attrs.suffle = !attrs.suffle;  
+            console.log(item.image);
+          }
+        });
+      }
+    }
+  })
   .directive('newGame', function () {
     return function(scope, elm, attrs) {
-      var item, items, tag;
-
-      items = [
-        {
-          word: 'がんばる',
-          image: 'https://dl.dropboxusercontent.com/u/31717228/images/zoi/huhuh.jpg',
-          src: 'pic.twitter.com/7hvwgRmZ2r'
-        }, {
-          word: 'がんばる',
-          image: 'https://dl.dropboxusercontent.com/u/31717228/images/zoi/ganbaruzoi.jpg',
-          src: 'pic.twitter.com/6bdYFIyc3e'
-        }, {
-          word: 'がんばる',
-          image: 'https://dl.dropboxusercontent.com/u/31717228/images/zoi/yosi.jpg',
-          src: 'pic.twitter.com/VMJbHYLznB'
-        }, {
-          word: 'がんばる',
-          image: 'https://dl.dropboxusercontent.com/u/31717228/images/zoi/owarisouninai.jpg',
-          src: 'pic.twitter.com/Y3ht2Ud94J'
-        }, {
-          word: 'がんばる',
-          image: 'https://dl.dropboxusercontent.com/u/31717228/images/zoi/soutai.jpg',
-          src: 'pic.twitter.com/7s5Ke5IQVs'
-        }, {
-          word: 'あきらめる',
-          image: 'https://dl.dropboxusercontent.com/u/31717228/images/zoi/dameda.jpg',
-          src: 'pic.twitter.com/DE1dKyLsav'
-        }, {
-          word: 'あきらめる',
-          image: 'https://dl.dropboxusercontent.com/u/31717228/images/zoi/mouyada.jpg',
-          src: 'pic.twitter.com/lkDaoEEC7H'
-        }, {
-          word: 'かえる',
-          image: 'https://dl.dropboxusercontent.com/u/31717228/images/zoi/osakini.jpg',
-          src: 'pic.twitter.com/ajwCeJa54A'
-        }, {
-          word: 'ごはんにする',
-          image: 'https://dl.dropboxusercontent.com/u/31717228/images/zoi/gulu.jpg',
-          src: 'pic.twitter.com/rWLIjU08mU'
-        }, {
-          word: 'ねる',
-          image: 'https://dl.dropboxusercontent.com/u/31717228/images/zoi/yasumutoki.jpg',
-          src: 'pic.twitter.com/Qa4OOuaSb4'
-        }
-      ];
-
+      var item, tag;
 
       item = items[Math.floor(Math.random() * items.length)];
       tag = '<div class="jumbotron"><div class="jumbotron-photo"><img src="' + item.image + '"></div><div class="jumbotron-contents"><h1 class="text-center">' + item.word + '<i class="fa fa-chevron-right  word"></i><a href="https://twitter.com/intent/tweet?hashtags=NEWGAME!&url=http://zoi.herokuapp.com&text=' + item.src + '" title="Tweet" target="_blank"><i class="fa fa-twitter"></i> <span class="tweet">tweet</span></a></h1></div></div>';
