@@ -11,7 +11,7 @@ config(function ($routeProvider, $locationProvider) {
   $routeProvider.
     when('/', {
       templateUrl: 'partials/index',
-      controller: 'MyCtrl1'
+      controller: 'MyCtrl'
     }).
     otherwise({
       redirectTo: '/'
