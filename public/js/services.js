@@ -8,11 +8,11 @@ angular.module('myApp.services', [])
       {
         word: 'がんばる',
         image: 'https://pbs.twimg.com/media/BspTawrCEAAwQnP.jpg:large',
-        src: 'pic.twitter.com/7hvwgRmZ2r'
+        src: 'pic.twitter.com/6bdYFIyc3e'
       }, {
         word: 'がんばる',
         image: 'https://pbs.twimg.com/media/BspTkipCIAE4a0n.jpg:large',
-        src: 'pic.twitter.com/6bdYFIyc3e'
+        src: 'pic.twitter.com/7hvwgRmZ2r'
       }, {
         word: 'がんばる',
         image: 'https://pbs.twimg.com/media/BspWSkvCAAAMi43.jpg:large',

@@ -1,6 +1,6 @@
 {
-  "name": "application-name",
-  "version": "0.0.1",
+  "name": "zoi",
+  "version": "1.0.1",
   "private": true,
   "dependencies": {
     "body-parser": "^1.0.2",
@@ -9,6 +9,7 @@
     "jade": "~0.31.2",
     "method-override": "^1.0.0",
     "morgan": "^1.0.0",
-    "express-error-handler": "^0.5.4"
+    "express-error-handler": "^0.5.4",
+    "continuation-local-storage": "^3.0.0"
   }
 }
