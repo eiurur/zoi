@@ -38,9 +38,21 @@ angular.module('myApp.services', [])
         image: 'https://pbs.twimg.com/media/BspWfqoCYAE836J.jpg:large',
         src: 'pic.twitter.com/lkDaoEEC7H'
       }, {
+        word: 'あきらめる',
+        image: 'https://pbs.twimg.com/media/BtcSLNRCMAAFGoH.jpg:large',
+        src: 'pic.twitter.com/jEHjdl6k3N'
+      }, {
+        word: 'あきらめる',
+        image: 'https://pbs.twimg.com/media/BtcSIHmCUAA8Prp.jpg:large',
+        src: 'pic.twitter.com/IPsYt9K1t2'
+      }, {
         word: 'かえる',
         image: 'https://pbs.twimg.com/media/BswuLr2CMAA1SpE.jpg:large',
         src: 'pic.twitter.com/ltC7iuI7rd'
+      }, {
+        word: 'きたく',
+        image: 'https://pbs.twimg.com/media/BtcSRdRCMAArUCS.jpg:large',
+        src: 'pic.twitter.com/jjXJFYBZjy'
       }, {
         word: 'ごはんにする',
         image: 'https://pbs.twimg.com/media/BspWlZFCMAA4fmV.jpg:large',
@@ -50,9 +62,21 @@ angular.module('myApp.services', [])
         image: 'https://pbs.twimg.com/media/BswuMrPCEAEECXg.jpg:large',
         src: 'pic.twitter.com/g0tGY4FtE4'
       }, {
+        word: 'ごはんにする',
+        image: 'https://pbs.twimg.com/media/BtcSOp6CcAA9_b4.jpg:large',
+        src: 'pic.twitter.com/lcvdPWUnm7'
+      }, {
+        word: 'ごはんにする',
+        image: 'https://pbs.twimg.com/media/BtcSFKpCQAAb73x.jpg:large',
+        src: 'pic.twitter.com/J3NNfZqfFF'
+      }, {
         word: 'ねる',
         image: 'https://pbs.twimg.com/media/BspWoBQCcAAm9y5.jpg:large',
         src: 'pic.twitter.com/Qa4OOuaSb4'
+      }, {
+        word: 'ねる',
+        image: 'https://pbs.twimg.com/media/BtcSM8BCYAE3_8j.jpg:large',
+        src: 'pic.twitter.com/4gZWKWEosT'
       }, {
         word: 'わかった',
         image: 'https://pbs.twimg.com/media/BswuH1qCcAAueYw.jpg:large',
@@ -74,9 +98,29 @@ angular.module('myApp.services', [])
         image: 'https://pbs.twimg.com/media/BswuUTPCYAAVX5n.jpg:large',
         src: 'pic.twitter.com/onsbKNL4H7'
       }, {
+        word: 'きゅうけいにする',
+        image: 'https://pbs.twimg.com/media/BtcSU0xCcAAmz_W.jpg:large',
+        src: 'pic.twitter.com/GBqizwBB0Y'
+      }, {
         word: 'おはようございまーす',
         image: 'https://pbs.twimg.com/media/Bs7qd4uCAAAwalT.jpg:large',
         src: 'pic.twitter.com/4EWdIZGmuG'
+      }, {
+        word: 'つかれた',
+        image: 'https://pbs.twimg.com/media/BtcSG05CMAEEyIG.jpg:large',
+        src: 'pic.twitter.com/NYs5I3aDP3'
+      }, {
+        word: 'やっぱすげぇ',
+        image: 'https://pbs.twimg.com/media/BtcSQcACIAAX_jh.jpg:large',
+        src: 'pic.twitter.com/xhb5fGfAIH'
+      }, {
+        word: 'あやまる',
+        image: 'https://pbs.twimg.com/media/BtcSJngCEAAIJgT.jpg:large',
+        src: 'pic.twitter.com/Qlch0hIfa0'
+      }, {
+        word: 'ありがとうございます',
+        image: 'https://pbs.twimg.com/media/BtcSDbWCQAADuhK.jpg:large',
+        src: 'pic.twitter.com/LCn2AKuz2s'
       }
     ];
   });
