@@ -110,14 +110,6 @@ angular.module('myApp.services', [])
         image: 'https://pbs.twimg.com/media/BtcSG05CMAEEyIG.jpg:large',
         src: 'pic.twitter.com/NYs5I3aDP3'
       }, {
-        word: 'やっぱすげぇ',
-        image: 'https://pbs.twimg.com/media/BtcSQcACIAAX_jh.jpg:large',
-        src: 'pic.twitter.com/xhb5fGfAIH'
-      }, {
-        word: 'あやまる',
-        image: 'https://pbs.twimg.com/media/BtcSJngCEAAIJgT.jpg:large',
-        src: 'pic.twitter.com/Qlch0hIfa0'
-      }, {
         word: 'ありがとうございます',
         image: 'https://pbs.twimg.com/media/BtcSDbWCQAADuhK.jpg:large',
         src: 'pic.twitter.com/LCn2AKuz2s'
