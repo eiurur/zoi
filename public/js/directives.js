@@ -26,7 +26,25 @@ angular.module('myApp.directives', [])
         var item, srcPhoto, targetPhoto, targetContent;
 
         element.bind('click', function() {
-          if (!srcPhoto) srcPhoto = element[0].childNodes[0].attributes[0].firstChild.data;
+          if (!srcPhoto){
+
+            // console.log("ele", element[0]);
+            // console.log("ele", element[0].childNodes[0]);
+            // console.log("element[0].childNodes[0]", element[0].childNodes[0]);
+            // console.log("element[0].childNodes[0].attributes[0]", element[0].childNodes[0].attributes[0]);
+            // console.log("element[0].childNodes[0].attributes[0].firstChild", element[0].childNodes[0].attributes[0].firstChild);
+            // console.log("element[0].firstChild.attributes", element[0].firstChild.attributes);
+            // console.log("element[0].firstChild.attributes[2].nodeValue", element[0].firstChild.attributes[2].nodeValue);
+            if(_.isNull(element[0].childNodes[0].attributes[0].firstChild)){
+
+              // Firefox
+              srcPhoto = element[0].firstChild.attributes[2].nodeValue;
+            } else {
+
+              // Chrome
+              srcPhoto = element[0].childNodes[0].attributes[0].firstChild.data;
+            }
+          }
 
           item = _.findWhere(NewGameService.items, {image: srcPhoto});
 
