@@ -106,6 +106,10 @@ angular.module('myApp.services', [])
         image: 'https://pbs.twimg.com/media/Bs7qd4uCAAAwalT.jpg:large',
         src: 'pic.twitter.com/4EWdIZGmuG'
       }, {
+        word: 'おはようございまーす',
+        image: 'https://pbs.twimg.com/media/Bts7OpFCcAEkaO4.jpg:large',
+        src: 'pic.twitter.com/cGdCEaSfyt'
+      }, {
         word: 'つかれた',
         image: 'https://pbs.twimg.com/media/BtcSG05CMAEEyIG.jpg:large',
         src: 'pic.twitter.com/NYs5I3aDP3'
@@ -113,6 +117,14 @@ angular.module('myApp.services', [])
         word: 'ありがとうございます',
         image: 'https://pbs.twimg.com/media/BtcSDbWCQAADuhK.jpg:large',
         src: 'pic.twitter.com/LCn2AKuz2s'
+      }, {
+        word: 'やった',
+        image: 'https://pbs.twimg.com/media/Bts7BNsCMAASKsP.jpg:large',
+        src: 'pic.twitter.com/ThDlCfuyba'
       }
     ];
+
+    this.random = function() {
+      return this.items[Math.floor(Math.random() * this.items.length)];
+    }
   });

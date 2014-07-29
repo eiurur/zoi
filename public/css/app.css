@@ -1,6 +1,10 @@
 /* app css stylesheet */
 
-
+/* 縦100% */
+html, body {
+  height: 100%;
+  width: 100%;
+}
 a {
   cursor: pointer;
 }
@@ -40,9 +44,7 @@ a {
 .panel-magin {
   margin-top: 30px;
 }
-/*.title {
-  color: #9B59B6;
-}*/
+
 .tweet {
   font-size: 28px;
 }
@@ -52,5 +54,57 @@ a {
 }
 
 .affiliate {
-   padding: 30px 0;
+  padding: 30px 0;
+}
+
+.select-arrow {
+  -moz-transition: left .1s;
+  -webkit-transition: left .1s;
+  -o-transition: left .1s;
+  transition: left .1s;
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  margin: 20px 0 0 20px;
+}
+
+.arrow-slide {
+  -moz-transition: left .5s;
+  -webkit-transition: left .5s;
+  -o-transition: left .5s;
+  transition: left .5s;
+  left: 260px;
+}
+
+.select-view {
+  float: left;
+  margin: 10px;
+}
+
+.sidebar {
+  -moz-transition: left .1s;
+  -webkit-transition: left .1s;
+  -o-transition: left .1s;
+  transition: left .1s;
+  width: 260px;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: -260px;
+  z-index: 999;
+  max-height: 1690px;
+  overflow-y: scroll;
+}
+.slide-out {
+  -moz-transition: left .5s;
+  -webkit-transition: left .5s;
+  -o-transition: left .5s;
+  transition: left .5s;
+  left: 0px;
+}
+
+.container {
+    height: 100%;
 }

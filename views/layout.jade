@@ -1,16 +1,16 @@
 !!!
 html(ng-app="myApp")
   head
-    meta(charset='utf8')
+    meta(charset='utf-8')
     meta(property='og:url', content='http://zoi.herokuapp.com')
     meta(property='og:site_name', content='zoi')
-    meta(property='og:description', content='今日も一日がんばるぞい')
+    meta(property='og:description', content='今日も一日がんばるぞい！')
     meta(property='og:author', content='eiurur')
     meta(property='og:locale', content='ja_JP')
     meta(http-equiv='X-UA-Compatible', content='IE=edge')
     meta(name='viewport', content='width=device-width, initial-scale=1')
-    base(href='/')
     title zoi
+    base(href='/')
     link(rel='shortcut icon', href='./images/favicon.ico')
     link(rel='apple-touch-icon-precomposed', href='./images/apple-touch-icon.png')
     link(rel='stylesheet', href='./bower_components/Bootflat/bootflat/css/bootflat.min.css')
@@ -20,10 +20,11 @@ html(ng-app="myApp")
   body.bg
     block body
 
-  script(src='./js/lib/angular/angular.min.js')
+  script(src='./bower_components/angular/angular.min.js')
+  script(src='//cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.20/angular-route.min.js')
+  script(src='./bower_components/lodash/dist/lodash.min.js')
   script(src='./js/app.js')
   script(src='./js/services.js')
   script(src='./js/controllers.js')
-  script(src='./js/filters.js')
   script(src='./js/directives.js')
   script(src='./js/analyticstracking.js')
