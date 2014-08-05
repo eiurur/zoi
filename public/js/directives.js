@@ -10,8 +10,6 @@ angular.module('myApp.directives', [])
         var item, srcPhoto, targetPhoto, targetContent;
 
         element.bind('click', function() {
-          if (srcPhoto) return;
-
           if(_.isNull(element[0].childNodes[0].attributes[0].firstChild)){
 
             // Firefox
