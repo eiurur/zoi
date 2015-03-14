@@ -65,7 +65,7 @@ angular.module('myApp.directives', [])
       link: function(scope, element, attrs) {
         var tag;
 
-        tag = '<div class="text-center amazon"><a href="http://www.amazon.co.jp/dp/4832244140" target="_blank"><img src="http://pbs.twimg.com/media/Bgf50bZCAAApSjI.jpg:small" height="250"></a><h3><a href="http://www.amazon.co.jp/dp/4832244140" target="_blank">NEW GAME!</a></h3></div>';
+        tag = '<div class="text-center amazon"><a href="http://www.amazon.co.jp/dp/4832245465" target="_blank"><img src="http://ecx.images-amazon.com/images/I/81EXO6tlYFL.jpg" height="250"></a><h3><a href="http://www.amazon.co.jp/dp/4832245465" target="_blank">NEW GAME!</a></h3></div>';
         element.append(tag);
       }
     };
