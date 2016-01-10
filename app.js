@@ -6,13 +6,11 @@
 var express = require('express'),
   bodyParser = require('body-parser'),
   methodOverride = require('method-override'),
-  // errorHandler = require('express-error-handler'),
   morgan = require('morgan'),
-  routes = require('./routes'),
-  api = require('./routes/api'),
   http = require('http'),
-  path = require('path');
-  // newrelic = require('newrelic');
+  path = require('path'),
+  routes = require('./routes'),
+  api = require('./routes/api');
 
 var app = module.exports = express();
 
@@ -34,8 +32,6 @@ var env = process.env.NODE_ENV || 'development';
 
 // development only
 if (env === 'development') {
-  // app.use(express.errorHandler());
-  // app.use(errorHandler);
   app.locals.pretty = true;
 }
 
@@ -48,21 +44,10 @@ if (env === 'production') {
 /**
  * Routes
  */
-
-// serve index and view partials
 app.get('/', routes.index);
 app.get('/partials/:name', routes.partials);
-
-// JSON API
 app.get('/api/name', api.name);
-
-// redirect all others to the index (HTML5 history)
 app.get('*', routes.index);
-
-
-/**
- * Start Server
- */
 
 http.createServer(app).listen(app.get('port'), function () {
   console.log('Express server listening on port ' + app.get('port'));

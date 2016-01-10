@@ -3,13 +3,13 @@
   "version": "1.0.1",
   "private": true,
   "dependencies": {
-    "body-parser": "^1.0.2",
+    "body-parser": "^1.14.2",
     "continuation-local-storage": "^3.0.0",
     "error-handler": "^0.1.4",
     "express": "^4.1.2",
     "express-error-handler": "^0.5.4",
     "jade": "~0.31.2",
-    "method-override": "^1.0.0",
-    "morgan": "^1.0.0"
+    "method-override": "^2.3.5",
+    "morgan": "^1.6.1"
   }
 }
