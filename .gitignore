@@ -5,5 +5,4 @@ development.coffee
 development.js
 node_modules/grunt*
 newrelic_agent.log
-node_modules/newrelic/node_modules/*
-node_modules/bunyan/*
+node_modules/*

@@ -5,13 +5,15 @@ html, body {
   height: 100%;
   width: 100%;
 }
+
 a {
   cursor: pointer;
 }
+
 .bg {
-  /*background-image: url(../images/e0e0e0.png);*/
   background-color: #F1F2F6;
 }
+
 .menu {
   list-style: none;
   border-bottom: 0.1em solid black;
@@ -78,8 +80,8 @@ a {
 }
 
 .select-view {
-  float: left;
-  margin: 10px;
+  /*float: left;*/
+  margin: 5%;
 }
 
 .sidebar {
@@ -97,11 +99,26 @@ a {
   max-height: 1690px;
   overflow-y: scroll;
 }
+
+.sidebar .select-img {
+  display: inline-block;/*
+  background-color: #ccc;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;*/
+  cursor: pointer;
+
+  width: 40%;
+  height: 70px;
+      margin: 5%;
+}
+
 .slide-out {
   -moz-transition: left .5s;
   -webkit-transition: left .5s;
   -o-transition: left .5s;
   transition: left .5s;
+  padding: 10px 0;
   left: 0px;
 }
 

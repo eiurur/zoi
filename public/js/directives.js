@@ -7,24 +7,15 @@ angular.module('myApp.directives', [])
     return {
       restrict: 'A',
       link: function(scope, element, attrs) {
-        var item, srcPhoto, targetPhoto, targetContent;
+        var item, photoUrl, targetPhoto, targetContent;
 
-        element.bind('click', function() {
-          if(_.isNull(element[0].childNodes[0].attributes[0].firstChild)){
-
-            // Firefox
-            srcPhoto = element[0].firstChild.attributes[2].nodeValue;
-          } else {
-
-            // Chrome
-            srcPhoto = element[0].childNodes[0].attributes[0].firstChild.data;
-          }
-
-          item = _.findWhere(NewGameService.items, {image: srcPhoto});
+        element.on('click', function() {
+          photoUrl = element.attr('src');
+          item = _.findWhere(NewGameService.items, {image: photoUrl});
 
           if (!targetPhoto) targetPhoto = document.querySelector('.jumbotron-photo > img');
           if (!targetContent) targetContent = document.querySelector('.jumbotron-contents');
-          targetPhoto.src = srcPhoto;
+          targetPhoto.src = photoUrl;
           targetContent.innerHTML = '<h1 class="text-center">' + item.word + '<i class="fa fa-chevron-right  word"></i><a href="https://twitter.com/intent/tweet?hashtags=NEWGAME!&url=http://zoi.herokuapp.com&text=' + item.src + ' \/ " title="Tweet" target="_blank"><i class="fa fa-twitter"></i> <span class="tweet">tweet</span></a></h1>';
         });
       }
@@ -65,7 +56,7 @@ angular.module('myApp.directives', [])
       link: function(scope, element, attrs) {
         var tag;
 
-        tag = '<div class="text-center amazon"><a href="http://www.amazon.co.jp/dp/4832245465" target="_blank"><img src="http://ecx.images-amazon.com/images/I/81EXO6tlYFL.jpg" height="250"></a><h3><a href="http://www.amazon.co.jp/dp/4832245465" target="_blank">NEW GAME!</a></h3></div>';
+        tag = '<div class="text-center amazon"><a href="http://www.amazon.co.jp/dp/4832246569" target="_blank"><img src="http://ecx.images-amazon.com/images/I/81cF7yG5BkL.jpg" height="250"></a><h3><a href="http://www.amazon.co.jp/dp/4832246569" target="_blank">NEW GAME!</a></h3></div>';
         element.append(tag);
       }
     };

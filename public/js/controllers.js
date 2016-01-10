@@ -8,7 +8,4 @@ angular.module('myApp.controllers', [])
         $scope.isOpened = !$scope.isOpened;
     }
     $scope.items = NewGameService.items;
-  }])
-  .controller('MyCtrl', function ($scope) {
-    //
-  });
+  }]);

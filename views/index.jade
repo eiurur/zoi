@@ -8,9 +8,7 @@ block body
           i.fa.fa-square-o.fa-stack-2x
           i.fa.fa-stack-1x(ng-class='{"fa-chevron-left": isOpened, "fa-chevron-right": !isOpened}')
     .sidebar(ng-class='{"slide-out":isOpened}')
-      .select-view(ng-repeat='item in items')
-        a(change-new-game="#i{{$index}}")
-          img(src='{{item.image}}', width='100', height="70")
+      img.select-img(ng-repeat='item in items', src='{{item.image}}', change-new-game)
       //- //- select-new-game.select-view
       //- .select-view(select-new-game)
 
