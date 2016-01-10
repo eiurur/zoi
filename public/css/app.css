@@ -101,16 +101,11 @@ a {
 }
 
 .sidebar .select-img {
-  display: inline-block;/*
-  background-color: #ccc;
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;*/
+  display: inline-block;
   cursor: pointer;
-
   width: 40%;
   height: 70px;
-      margin: 5%;
+  margin: 5%;
 }
 
 .slide-out {

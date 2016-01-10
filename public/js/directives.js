@@ -1,7 +1,5 @@
 'use strict';
 
-/* Directives */
-
 angular.module('myApp.directives', [])
   .directive('changeNewGame', ['NewGameService', function (NewGameService) {
     return {

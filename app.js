@@ -9,8 +9,7 @@ var express = require('express'),
   morgan = require('morgan'),
   http = require('http'),
   path = require('path'),
-  routes = require('./routes'),
-  api = require('./routes/api');
+  routes = require('./routes');
 
 var app = module.exports = express();
 
@@ -46,7 +45,6 @@ if (env === 'production') {
  */
 app.get('/', routes.index);
 app.get('/partials/:name', routes.partials);
-app.get('/api/name', api.name);
 app.get('*', routes.index);
 
 http.createServer(app).listen(app.get('port'), function () {

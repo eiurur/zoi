@@ -1,7 +1,5 @@
 'use strict';
 
-/* Services */
-
 angular.module('myApp.services', [])
   .service('NewGameService', function() {
     this.items = [
