@@ -1,8 +1,2 @@
 www
-settings.js
-settings.coffee
-development.coffee
-development.js
-node_modules/grunt*
-newrelic_agent.log
 node_modules/*
